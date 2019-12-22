@@ -5,7 +5,14 @@
      My first php page
     </h1>
     <?php
-        echo "Hello world!";
+      function mytest(){
+          static $x = 0;
+          echo $x;
+          $x++;
+      }
+      mytest();
+      mytest();
+      mytest();
     ?>
 </body>
 </html>
