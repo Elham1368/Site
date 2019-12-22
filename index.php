@@ -2,10 +2,20 @@
 <html>
 <body>
     <h1>
-     My first php page
+     My Birthday
     </h1>
     <?php
-        echo "Hello world!";
+    $name = "Elham";
+    $lastName = "Hosseini";
+    $age = 30;
+    function birthday(){
+        //global $age;
+        //$age ++;
+        $GLOBALS['age']++;
+    }
+    birthday();
+    echo "HappyBirthday".$name.$lastName.$age;
+
     ?>
 </body>
 </html>
